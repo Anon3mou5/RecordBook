@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item>
+        <shape>
+            <gradient
+                android:endColor="#0575E6"
+                android:startColor="#00F260"
+                android:angle="315"
+                android:type="linear"
+                />
+            <corners
+                android:radius="10dp"
+                ></corners>
+
+        </shape>
+    </item>
+    <item android:gravity="center"
+        android:left="5dp"
+        android:right="5dp"
+        android:top="5dp"
+        android:bottom="5dp">
+
+        <bitmap android:src="@mipmap/deletetwo"
+            android:tint="#FFFFFF"/>
+    </item>
+</layer-list>

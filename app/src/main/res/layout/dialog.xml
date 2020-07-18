@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#32D6D6D6"
+    android:orientation="horizontal"
+    android:theme="@style/AppTheme"
+    android:windowSoftInputMode="adjustPan">
+
+    <!--    <View-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="5dp"-->
+    <!--        android:background="@drawable/shadow"-->
+    <!--        android:visibility="invisible"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/tool"-->
+    <!--        tools:layout_editor_absoluteX="3dp" />-->
+
+
+    <!--    <include-->
+    <!--        android:id="@+id/tool"-->
+    <!--        layout="@layout/toolbar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        tools:layout_editor_absoluteX="3dp"-->
+    <!--        tools:layout_editor_absoluteY="3dp" />-->
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cd2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FCFCFC"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="25dp"
+        app:cardMaxElevation="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/fname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/cabin_bold"
+                android:padding="2dp"
+                android:text="FIRST NAME"
+                android:textColor="#00C853"
+                android:textSize="19sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/lname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/cabin_bold"
+                android:padding="2dp"
+                android:text="LAST NAME"
+                android:textColor="#00C853"
+                android:textSize="19sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fnameedit" />
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/cabin_bold"
+                android:text="AGE"
+                android:textColor="#00C853"
+                android:textSize="19sp"
+                app:layout_constraintStart_toStartOf="@+id/fname"
+                app:layout_constraintTop_toBottomOf="@+id/lnameedit" />
+
+            <TextView
+                android:id="@+id/usn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/cabin_bold"
+                android:text="USN"
+                android:textColor="#00C853"
+                android:textSize="19sp"
+                app:layout_constraintStart_toStartOf="@+id/fname"
+                app:layout_constraintTop_toBottomOf="@+id/ageedit" />
+
+            <EditText
+                android:id="@+id/fnameedit"
+                android:layout_width="194dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/editbg"
+                android:fontFamily="@font/cabin_bold"
+                android:padding="6dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="#039F44"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/fname"
+                app:layout_constraintTop_toBottomOf="@+id/fname">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/lnameedit"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/editbg"
+                android:fontFamily="@font/cabin_bold"
+                android:padding="6dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="#039F44"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/lname"
+                app:layout_constraintTop_toBottomOf="@+id/lname">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/usnedit"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/editbg"
+                android:fontFamily="@font/cabin_bold"
+                android:padding="6dp"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:textColor="#039F44"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/fname"
+                app:layout_constraintTop_toBottomOf="@+id/usn">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/ageedit"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/editbg"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="6dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="#039F44"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/fname"
+                app:layout_constraintTop_toBottomOf="@+id/age">
+
+            </EditText>
+
+            <ToggleButton
+                android:id="@+id/toggleButton"
+                android:layout_width="85dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/grad5"
+                android:fontFamily="@font/cabin_bold"
+                android:text="ToggleButton"
+                android:textColor="#FFFFFF"
+                android:textOff="MALE"
+                android:textOn="FEMALE"
+                android:textSize="19sp"
+                app:layout_constraintStart_toStartOf="@+id/fname"
+                app:layout_constraintTop_toBottomOf="@+id/usnedit" />
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="85dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/grad5"
+                android:fontFamily="@font/cabin_bold"
+                android:text="ADD"
+                android:textColor="#FFFFFF"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toggleButton" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/grad5"
+                android:fontFamily="@font/roboto_bold"
+                android:text="CANCEL"
+                android:textColor="#FFFFFF"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toggleButton" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
